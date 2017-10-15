@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+
+
+intro = """unshadow: Distributed spooky crawler.
+
+Usage:
+    unshadow-crawler
+    unshadow-crawler (-h | --help)
+    unshadow-crawler (-v | --version)
+
+Options:
+    -h --help       Show this screen.
+    -v --version    Show version.
+"""
+
+
+from docopt import docopt
+from unshadow.main import start_metrics
+
+
+if __name__ == "__main__":
+    options = docopt(intro, version='0.0.1')
+    start_metrics()

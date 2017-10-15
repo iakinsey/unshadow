@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+
+
+intro = """unshadow: Distributed spooky crawler.
+
+Usage:
+    unshadow-crawler
+    unshadow-crawler [--config <config_path>]
+    unshadow-crawler (-h | --help)
+    unshadow-crawler (-v | --version)
+
+Options:
+    --config <config_path>        Path of json configuration file.
+    -h --help                     Show this screen.
+    -v --version                  Show version.
+"""
+
+
+from docopt import docopt
+from unshadow.main import start_crawler
+
+
+if __name__ == "__main__":
+    options = docopt(intro, version='0.0.1')
+    start_crawler(config_file=options['--config'])

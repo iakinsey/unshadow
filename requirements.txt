@@ -1,0 +1,15 @@
+docopt==0.6.2
+langdetect==1.0.7
+lxml==3.3.6
+nltk==3.2.5
+psycopg2==2.7.3.1
+pycurl==7.19.5
+six==1.11.0
+wheezy.caching==0.1.114
+wheezy.core==0.1.140
+wheezy.html==0.1.147
+wheezy.http==0.1.344
+wheezy.routing==0.1.157
+wheezy.security==0.1.64
+wheezy.validation==0.1.135
+wheezy.web==0.1.485
